@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Location Data App - Send</title>
+    <link rel="stylesheet" type="text/css" href="send-styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Location Data App</h1>
+            <p class="subtitle">Share Your Location</p>
+        </div>
+
+        <div class="form-container">
+            <h2 class="form-title">Enter Latitude and Longitude</h2>
+            <form id="dataForm">
+                <div class="input-container">
+                    <label class="input-label" for="latitude">Latitude</label>
+                    <input class="input-field" type="text" name="latitude" id="latitudeInput">
+                </div>
+                
+                <div class="input-container">
+                    <label class="input-label" for="longitude">Longitude</label>
+                    <input class="input-field" type="text" name="longitude" id="longitudeInput">
+                </div>
+                
+                <div class="input-container">
+                    <label class="input-label" for="message">Message</label>
+                    <input class="input-field" type="text" name="message" id="messageInput">
+                </div>
+                
+                <button class="submit-button" type="button" id="saveButton">Save Data</button>
+                <button class="submit-button" type="button" id="fetchButton">Fetch Current Location</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
